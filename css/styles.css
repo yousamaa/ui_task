@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Jost;
-  --main-color: #FFFFFF;
-  --primry-color: #081A2B;
-  --button-background: #4b709e;
-  --primary-button-background: #fe7649;
-  --background-color: #f0f7ff;
+  --main-color: #081A2B;
+  --primry-color: #FFFFFF;
+  --header-button-color: #C6A136;
+  --button-color: #0D89CA;
 }
 
 header {
@@ -18,16 +21,23 @@ header {
   height: 100%;
   background-position: center;
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #058ACC;
+}
+
+header a {
+  font-size: 18px;
+  color: var(--primry-color);
 }
 
 h1 {
-  color: var(--main-color)
+  color: var(--primry-color)
 }
 
 h2,
 h3,
 h4 {
-  color: var(--primry-color);
+  color: var(--main-color);
 }
 
 h3 {
@@ -41,7 +51,6 @@ p,
 a,
 li,
 button {
-  font-family: "muli";
   color: var(--primry-color);
 }
 
@@ -72,4 +81,61 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
+}
+
+/*-----our menu styles----*/
+
+header {
+  padding: 0 8rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+}
+
+header nav .left-side-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+header nav .left-side-menu a img {
+  width: 15.1rem;
+  height: 6.1rem;
+}
+
+/*-----right side menu styles----*/
+
+header .right-side-menu {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+header .right-side-menu .sub-menu {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .right-side-menu .sub-menu a {
+  margin-right: 5.2rem;
+}
+
+header .right-side-menu .sub-menu a li {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+header .right-side-menu .sub-menu a li:hover {
+  color: var(--header-button-color)
 }
