@@ -4,29 +4,30 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
 body {
-  --main-color: #283526;
-  --primry-color: #888888;
+  font-family: Jost;
+  --main-color: #FFFFFF;
+  --primry-color: #081A2B;
   --button-background: #4b709e;
   --primary-button-background: #fe7649;
   --background-color: #f0f7ff;
 }
 
-h1,
-h2 {
-  font-family: Avenir LT Std;
-  color: var(--main-color);
+header {
+  background-image: url(../images/landingBackground.png);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-h4,
-h3 {
-  font-family: "muli";
-  color: var(--main-color);
+h1 {
+  color: var(--main-color)
+}
+
+h2,
+h3,
+h4 {
+  color: var(--primry-color);
 }
 
 h3 {
