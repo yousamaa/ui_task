@@ -49,10 +49,12 @@ button {
 }
 
 p {
-  font-size: 1.8rem;
-  line-height: 150%;
+  color: var(--main-color);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.02rem;
 }
 
 a {
@@ -156,14 +158,17 @@ header .nav-menu a li:hover {
 
 /*-----About Us section styles----*/
 
+.main {
+  max-width: 144rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .about-us {
   padding: 8.9rem 8rem 13.4rem 8rem;
   display: grid;
   grid-template-columns: 47.96% 41.01%;
   column-gap: 14.1rem;
-  max-width: 144rem;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .about-us .left-side {
@@ -175,20 +180,11 @@ header .nav-menu a li:hover {
   max-width: 18.3rem;
   width: 100%;
   margin-bottom: 6.5rem;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 4.8rem;
-  line-height: 6.9rem;
-  letter-spacing: 0.02rem;
 }
 
 .about-us p {
   max-width: 61.4rem;
   width: 100%;
-  font-weight: 400;
-  font-size: 2.4rem;
-  line-height: 3.5rem;
-  letter-spacing: 0.02rem;
   margin-bottom: 2.4rem;
 }
 
@@ -218,5 +214,28 @@ header .nav-menu a li:hover {
 
 .about-us .right-side figure {
   max-width: 52.5rem;
+  width: 100%;
+}
+
+/*-----Offerings section styles----*/
+
+.offerings {
+  padding: 0 8rem 10rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offerings h2 {
+  margin-bottom: 3rem;
+}
+
+.offerings p {
+  margin-bottom: 7.9rem;
+}
+
+.offerings .services {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
