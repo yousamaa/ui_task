@@ -48,7 +48,7 @@ li {
   list-style: none;
 }
 
-/*-----our menu styles----*/
+/*-----our navbar styles----*/
 
 header {
   padding: 0 8rem;
@@ -72,25 +72,20 @@ header nav {
   padding-top: 5.5rem;
 }
 
-header nav .left-side-menu {
+header nav .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header nav .left-side-menu a {
+header nav .logo a {
   width: 15.1rem;
   height: 6.1rem;
 }
 
-/*-----right side menu styles----*/
-
-header .right-side-menu {
+header .nav-menu {
   display: flex;
   justify-content: end;
-}
-
-header .right-side-menu .sub-menu {
   width: 100%;
   height: inherit;
   display: flex;
@@ -99,14 +94,14 @@ header .right-side-menu .sub-menu {
 }
 
 
-header .right-side-menu .sub-menu a li {
+header .nav-menu a li {
   font-size: 1.8rem;
   line-height: 3.6rem;
   text-transform: capitalize;
   transition: all 0.2s;
 }
 
-header .right-side-menu .sub-menu a li:hover {
+header .nav-menu a li:hover {
   color: var(--header-button-color)
 }
 
