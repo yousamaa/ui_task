@@ -111,14 +111,16 @@ header .right-side-menu .sub-menu a li:hover {
   color: var(--header-button-color)
 }
 
-.main-hero-section {
+/*-----Hero section styles----*/
+
+.hero-section {
   margin-top: 15.6rem;
   width: 100%;
   height: 100%;
   margin-bottom: 10rem;
 }
 
-.main-hero-section h1 {
+.hero-section h1 {
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.02rem;
@@ -128,7 +130,7 @@ header .right-side-menu .sub-menu a li:hover {
   margin-bottom: 19.818rem;
 }
 
-.main-hero-section button {
+.hero-section button {
   width: 23.6rem;
   height: 5.2rem;
   left: 8rem;
@@ -143,7 +145,7 @@ header .right-side-menu .sub-menu a li:hover {
   margin-bottom: 16.4rem;
 }
 
-.main-hero-section button:hover {
+.hero-section button:hover {
   background: var(--primry-color);
   color: var(--header-button-color);
 }
